@@ -1,4 +1,4 @@
-<img width="524" height="508" alt="image" src="https://github.com/user-attachments/assets/8506f4c9-93f6-468f-ae30-fd94d78dd2c1" /># Stellar Object Classification using XGBoost on Sloan Digital Sky Survey (SDSS) Data
+# Stellar Object Classification using XGBoost on Sloan Digital Sky Survey (SDSS) Data
 
 **Introduction**
 Astronomy generates massive amounts of observational data every day. One of the most important tasks in modern astronomy is identifying and classifying celestial objects based on their observed properties.
