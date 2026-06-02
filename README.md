@@ -1,6 +1,7 @@
 # Stellar Object Classification using XGBoost on Sloan Digital Sky Survey (SDSS) Data
 
 **Introduction**
+
 Astronomy generates massive amounts of observational data every day. One of the most important tasks in modern astronomy is identifying and classifying celestial objects based on their observed properties.
 This project focuses on classifying astronomical objects into three categories:
 • Galaxy  
@@ -10,6 +11,7 @@ Using machine learning techniques and data collected from the Sloan Digital Sky 
 The project demonstrates a complete machine learning workflow including data exploration, feature selection, preprocessing, model training, hyperparameter tuning, evaluation, and model persistence.
 
 **Project Objective**
+
 The objective of this project is to build a machine learning model capable of accurately classifying celestial objects based on their observational and spectral measurements.
 The model predicts whether an observed object is:
 • Star  
@@ -17,6 +19,7 @@ The model predicts whether an observed object is:
 • Quasar (QSO)
 
 **About the Dataset**
+
 This project uses the Stellar Classification Dataset derived from the Sloan Digital Sky Survey (SDSS).
 SDSS is one of the largest astronomical surveys ever conducted and provides detailed measurements of celestial objects observed throughout the universe.
 Dataset Characteristics:
@@ -30,6 +33,7 @@ GALAXY - A large system of stars, gas, dust, and dark matter
 QSO - Quasi-Stellar Object, an extremely luminous active galactic nucleus 
 
 **Features Used for Training**
+
 alpha  Right Ascension (Celestial Longitude) 
 delta Declination (Celestial Latitude) 
 u Ultraviolet brightness 
@@ -40,6 +44,7 @@ z - Infrared brightness
 redshift - Amount by which light shifts toward longer wavelengths 
 
 **Features Removed**
+
 The following columns were removed because they mainly serve as identifiers and provide little predictive value:
 obj_ID
 run_ID
@@ -52,6 +57,7 @@ MJD
 fiber_ID
 
 **Project Workflow**
+
 1. Data Loading
 The dataset is loaded into a Pandas DataFrame for analysis and preprocessing.
 2. Exploratory Data Analysis
@@ -98,6 +104,7 @@ XGBoost feature importance scores are used to identify which astronomical measur
 The final model is saved using Joblib so that it can be reused without retraining.
 
 **Results**
+
 The tuned XGBoost model achieved approximately 98% accuracy on unseen test data.
 Key observations:
 • Excellent precision across all classes  
@@ -107,6 +114,7 @@ Key observations:
 The confusion matrix shows that most prediction errors occur between galaxies and quasars, while stars are classified with near-perfect accuracy.
 
 **Technologies Used**
+
 • Python  
 • Pandas  
 • NumPy  
@@ -118,6 +126,7 @@ The confusion matrix shows that most prediction errors occur between galaxies an
 • Jupyter Notebook
 
 **Repository Structure**
+
 stellar_classification_notebook.ipynb
 README.md
 classification report.png
@@ -127,4 +136,5 @@ star_classification_dataset.csv
 
 
 **Author** 
+
 Atharva Ambilwade
