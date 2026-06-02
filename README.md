@@ -127,13 +127,11 @@ The confusion matrix shows that most prediction errors occur between galaxies an
 
 **Repository Structure**
 
-stellar_classification_notebook.ipynb
-README.md
-classification report.png
-confusion_matrix.png
-star_classification_dataset.csv
-
-
+--stellar_classification_notebook.ipynb
+--README.md
+--classification report.png
+--confusion_matrix.png
+--star_classification_dataset.csv
 
 **Author** 
 
